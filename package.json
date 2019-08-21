@@ -1,0 +1,22 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "Учебный проект HTML Academy",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PsarewIvan/Mishka.git"
+  },
+  "author": "PsarewIvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PsarewIvan/Mishka/issues"
+  },
+  "homepage": "https://github.com/PsarewIvan/Mishka#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

@@ -1,0 +1,10 @@
+source/img-cart/
+.vscode/
+node_modules/
+build/
+*.ai
+*.log
+*.pdf
+*.psd
+npm-debug.*
+Thumbs.db
