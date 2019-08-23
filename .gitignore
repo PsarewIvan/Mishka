@@ -1,7 +1,7 @@
-source/img-cart/
-.vscode/
 node_modules/
 build/
+.vscode/
+package-lock.json
 *.ai
 *.log
 *.pdf
