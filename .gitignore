@@ -1,5 +1,6 @@
 node_modules/
 build/
+cart/
 .vscode/
 package-lock.json
 *.ai
