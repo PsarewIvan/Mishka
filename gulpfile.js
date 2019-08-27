@@ -18,10 +18,14 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const rename = require("gulp-rename");
 const del = require('del');
+
 const images = require('gulp-image');
 const webp = require('gulp-webp');
 const svgSprite = require('gulp-svg-sprite');
 const svgmin = require('gulp-svgmin');
+const cheerio = require('gulp-cheerio') // убирает лишние атрибуты
+const replace = require('gulp-replace'); // замена символов
+
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 
@@ -142,6 +146,14 @@ function createSvgSprite() {
                   pretty: true  // убирает лишние пробелы
                 }
               }))
+              .pipe(cheerio({
+                run: function ($) {
+                  $('[fill]').removeAttr('fill');
+                  $('[style]').removeAttr('style');
+                },
+                parserOptions: { xmlMode: true }
+              }))
+              .pipe(replace('&gt;', '>'))
               .pipe(svgSprite({
                 mode: {
                   symbol: {
