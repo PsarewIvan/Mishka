@@ -23,7 +23,7 @@ const images = require('gulp-image');
 const webp = require('gulp-webp');
 const svgSprite = require('gulp-svg-sprite');
 const svgmin = require('gulp-svgmin');
-const cheerio = require('gulp-cheerio') // убирает лишние атрибуты
+const cheerio = require('gulp-cheerio'); // убирает лишние атрибуты
 const replace = require('gulp-replace'); // замена символов
 
 const browserSync = require('browser-sync').create();
