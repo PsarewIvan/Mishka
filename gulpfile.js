@@ -9,14 +9,14 @@ sass.compiler = require('node-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
-const rigger = require('gulp-rigger');
+const rigger = require('gulp-rigger'); // Объединение файлов
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
 const htmlmin = require('gulp-htmlmin');
 
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const rename = require("gulp-rename");
+const rename = require('gulp-rename');
 const del = require('del');
 
 const images = require('gulp-image');
