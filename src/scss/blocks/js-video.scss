@@ -1,0 +1,13 @@
+.js-video__media {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.js-video--enabled {
+  cursor: pointer;
+}
+
+.js-video--enabled .js-video__button {
+  display: block;
+}

@@ -1,0 +1,53 @@
+.manufacturing__video {
+  position: relative;
+
+  width: 260px;
+
+  line-height: 0;
+  background-color: #000000;
+}
+
+.manufacturing__video:hover .manufacturing__video-svg {
+  transform: scale(1.2);
+}
+
+.manufacturing__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+  width: 101px;
+  height: 77px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  transform: translate(-50%, -50%);
+
+  &:focus .manufacturing__video-svg {
+    transform: scale(1.2);
+  }
+
+  &:active .manufacturing__video-svg {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.manufacturing__video-shape {
+  fill: #63d1bb;
+}
+
+.manufacturing__video-stroke {
+  fill: #ffffff;
+}
+
+.manufacturing__video-icon {
+  fill: #ffffff;
+}
+
+.manufacturing__video-svg {
+  transition: transform 0.1s;
+}
