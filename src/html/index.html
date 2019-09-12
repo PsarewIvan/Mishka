@@ -17,24 +17,29 @@
   <header class="main-header">
     <h1 class="visually-hidden">Mishka - онлайн магазин вязанных товаров для дома</h1>
     <div class="main-header__link-wrapper">
-      <a class="main-header__link">
-        <span class="visually-hidden">Mishka</span>
-        <picture>
-          <source srcset="img/icon/logo-desktop.svg" media="(min-width: 1150px)">
-          <source srcset="img/icon/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="main-header__logo-icon" src="img/icon/logo-mobile.svg" alt="Mishka Logo" width="86">
-        </picture>
-      </a>
-      <button class="main-header__nav-btn header__nav-btn--close js--header__nav-btn display-none" type="button">
-          <span class="visually-hidden">Меню навигации</span>
-      </button>
+      <div class="main-header__link-sub-wrapper">
+        <a class="main-header__link">
+          <span class="visually-hidden">Mishka</span>
+          <picture>
+            <source srcset="img/icon/logo-desktop.svg" media="(min-width: 1150px)">
+            <source srcset="img/icon/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="main-header__logo-icon" src="img/icon/logo-mobile.svg" alt="Mishka Logo" width="86">
+          </picture>
+        </a>
+        <button class="main-header__nav-btn display-none" type="button">
+            <span class="visually-hidden">Меню навигации</span>
+            <svg class="main-header__nav-btn-icon" width="21" height="21">
+              <use xlink:href="#icon-menu-close"></use>
+            </svg>
+        </button>
+      </div>
     </div>
     <div class="main-header__nav-wrapper">
       <nav class="main-header__nav main-nav">
         <div class="main-nav__mobile mobile-nav">
           <ul class="mobile-nav__list">
             <li class="mobile-nav__li">
-              <a class="mobile-nav__link" href="catalog.html">Каталог товаров</a>
+              <a class="mobile-nav__link" href="catalog.html"><span class="mobile-nav__link-text">Каталог товаров</span></a>
             </li>
             <li class="mobile-nav__li">
               <a class="mobile-nav__link" href="form.html">Вязание на заказ</a>
