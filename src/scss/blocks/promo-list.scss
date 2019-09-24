@@ -1,0 +1,31 @@
+.promo-list__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo-list__li {
+  &:nth-child(odd) {
+    background-color: $promo-odd;
+  }
+
+  &:nth-child(even) {
+    background-color: $promo-even;
+  }
+}
+
+.promo-list__link {
+  display: block;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 30px 130px 30px 0;
+
+  color: $light-color;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+}
