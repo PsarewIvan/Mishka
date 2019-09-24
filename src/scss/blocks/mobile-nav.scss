@@ -65,6 +65,10 @@
     color: $heading-text-color;
   }
 
+  &:hover::placeholder {
+    color: $heading-text-hover;
+  }
+
   &:focus::placeholder {
     color: $heading-text-active;
   }
