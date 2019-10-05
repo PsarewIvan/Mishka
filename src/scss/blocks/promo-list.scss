@@ -9,7 +9,6 @@
 
 .promo-list__li {
   display: flex;
-  min-height: 120px;
 
   &:nth-child(odd) {
     background-color: $promo-odd;
@@ -21,23 +20,46 @@
 }
 
 .promo-list__link {
+  position: relative;
   display: flex;
-  align-items: center;
   width: 100%;
+  min-height: 120px;
 
   color: $light-color;
   text-decoration: none;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
+
+  &:hover .promo-list__span-wrapper--transform {
+    position: absolute;
+    top: -5px;
+  }
+
+  &--odd:hover .promo-list__span-wrapper--transform {
+    background-color: $promo-odd;
+  }
+
+  &--even:hover .promo-list__span-wrapper--transform {
+    background-color: $promo-even;
+  }
 }
 
 .promo-list__span-wrapper {
   position: relative;
 
-  display: block;
   width: $mobile-width;
   margin: 0 auto;
+
+  &--transform {
+    width: 100%;
+  }
+
+  &--flex {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+  }
 }
 
 .promo-list__span {
