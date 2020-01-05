@@ -32,15 +32,14 @@
   font-weight: 700;
 
   &:hover .promo-list__span-wrapper--transform {
-    position: absolute;
-    top: -5px;
+    transform: translateY(-5px);
   }
 
-  &--odd:hover .promo-list__span-wrapper--transform {
+  &--odd .promo-list__span-wrapper--transform {
     background-color: $promo-odd;
   }
 
-  &--even:hover .promo-list__span-wrapper--transform {
+  &--even .promo-list__span-wrapper--transform {
     background-color: $promo-even;
   }
 }
@@ -53,6 +52,7 @@
 
   &--transform {
     width: 100%;
+    transition: transform 0.3s;
   }
 
   &--flex {
@@ -76,6 +76,7 @@
 
   &--odd::after {
     top: -7px;
+    right: 8px;
 
     width: 40px;
     height: 62px;
