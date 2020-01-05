@@ -31,7 +31,8 @@
   line-height: 24px;
   font-weight: 700;
 
-  &:hover .promo-list__span-wrapper--transform {
+  &:hover .promo-list__span-wrapper--transform,
+  &:focus .promo-list__span-wrapper--transform {
     transform: translateY(-5px);
   }
 
