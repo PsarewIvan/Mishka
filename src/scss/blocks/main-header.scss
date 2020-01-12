@@ -44,6 +44,16 @@
 
   transform: translateY(-50%);
   cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.4;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 #icon-menu-close {
