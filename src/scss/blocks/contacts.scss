@@ -1,5 +1,57 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__desktop-block {
+  width: $mobile-width;
+  margin: 0 auto 40px;
+}
+
+.contacts__heading {
+  margin: 0 0 35px;
+  font-size: 18px;
+  line-height: 2;
+  color: black;
+}
+
+.contacts__table {
+  border-collapse: collapse;
+  line-height: 2;
+
+  &:first-child {
+    margin-bottom: 25px;
+  }
+
+  td:first-child {
+    width: 75px;
+    vertical-align: baseline;
+  }
+}
+
+.contacts__table-link {
+  color: $main-text-color;
+  text-decoration-color: $link-hover-color;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__contact-link {
+  order: 1;
+  width: $mobile-width;
+  margin: 0 auto 40px;
+}
+
 .contacts__map {
   min-height: 450px;
+  margin-bottom: 40px;
 
   background-image: url(../img/picture/map-mobile@1x.jpg);
   background-repeat: no-repeat;
