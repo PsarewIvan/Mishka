@@ -99,9 +99,9 @@ function scripts() {
               .pipe(babel({
                 presets: ['@babel/env']
               }))
-              .pipe(uglify({
-                toplevel: true
-              }))
+              // .pipe(uglify({
+              //   toplevel: true
+              // }))
               .pipe(rename('script-min.js'))
               .pipe(sourcemaps.write())
               .pipe(gulp.dest(path.build.js))
