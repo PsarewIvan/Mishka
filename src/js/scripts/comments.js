@@ -1,6 +1,6 @@
 'use strict';
 {
-  let comments = document.querySelectorAll('.reviews__li');
+  const comments = document.querySelectorAll('.reviews__li');
 
   function toggleHide(item) {
     item.classList.toggle('display-none');
