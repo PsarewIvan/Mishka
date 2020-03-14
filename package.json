@@ -7,7 +7,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "acorn": "^7.1.0",
+    "acorn": "^7.1.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
