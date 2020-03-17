@@ -7,5 +7,6 @@ package-lock.json
 *.log
 *.pdf
 *.psd
+*.DS_Store
 npm-debug.*
 Thumbs.db
