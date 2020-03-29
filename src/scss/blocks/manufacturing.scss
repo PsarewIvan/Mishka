@@ -4,10 +4,17 @@
   }
 }
 
-.manufacturing__video {
+.manufacturing {
   position: relative;
+}
+
+.manufacturing__video {
+  position: absolute;
+  top: 100px;
 
   width: 260px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 
   line-height: 0;
   background-color: #000000;
@@ -52,4 +59,37 @@
 
 .manufacturing__video-svg {
   transition: transform 0.1s;
+}
+
+.manufacturing__wrapper {
+  width: $mobile-width;
+  padding: 25px 30px 30px;
+  margin: 0 auto;
+
+  border: 1px solid $border-color;
+}
+
+.manufacturing__headline {
+  position: relative;
+  padding-left: 60px;
+  margin: 0 0 205px;
+
+  font-size: 17px;
+  line-height: 1.4;
+  color: $heading-text-color;
+}
+
+.manufacturing__headline-icon {
+  position: absolute;
+  left: 0;
+  top: 7px;
+
+  fill: $icon-fill-hover;
+}
+
+.manufacturing__description {
+  margin: 0 0 30px;
+
+  font-size: 13px;
+  line-height: 1.85;
 }
