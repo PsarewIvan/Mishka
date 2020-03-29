@@ -1,0 +1,16 @@
+.catalog__heading {
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 74px 0;
+
+  font-size: 27px;
+  line-height: 1.1;
+  text-align: center;
+  color: $heading-text-color;
+}
+
+.catalog__heading-wrapper {
+  margin-bottom: 30px;
+
+  background-color: $heading-bg-color;
+}
