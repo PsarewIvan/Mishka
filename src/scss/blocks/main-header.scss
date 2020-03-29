@@ -23,7 +23,6 @@
 
   width: 100%;
 
-  &:hover[href],
   &:focus[href] {
     opacity: 0.6;
   }
@@ -55,7 +54,6 @@
   cursor: pointer;
   transition: opacity 0.2s;
 
-  &:hover,
   &:focus {
     opacity: 0.4;
   }
@@ -67,4 +65,14 @@
 
 #icon-menu-close {
   fill: #231F20;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .main-header__link:hover[href] {
+    opacity: 0.6;
+  }
+
+  .main-header__nav-btn:hover {
+    opacity: 0.4;
+  }
 }

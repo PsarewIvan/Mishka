@@ -46,7 +46,6 @@
   text-decoration: none;
   color: $main-text-color;
 
-  &:hover,
   &:focus {
     text-decoration: underline;
     color: $link-hover-color;
@@ -77,7 +76,6 @@
   border: 1px solid #ececec;
   cursor: pointer;
 
-  &:hover .reviews__prev-icon,
   &:focus .reviews__prev-icon {
     opacity: 0.6;
   }
@@ -89,4 +87,15 @@
 
 .reviews__send-link {
   margin-bottom: 45px;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .reviews__reviewer-link:hover {
+    text-decoration: underline;
+    color: $link-hover-color;
+  }
+
+  .reviews__comment-button:hover .reviews__prev-icon {
+    opacity: 0.6;
+  }
 }

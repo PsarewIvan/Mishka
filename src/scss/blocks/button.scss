@@ -13,7 +13,6 @@
     background-color 0.2s,
     color 0.2s;
 
-  &:hover,
   &:focus {
     background-color: $btn-background;
     color: $light-color;
@@ -21,5 +20,12 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .button:hover {
+    background-color: $btn-background;
+    color: $light-color;
   }
 }

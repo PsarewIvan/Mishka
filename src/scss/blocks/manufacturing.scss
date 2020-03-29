@@ -7,10 +7,6 @@
   background-color: #000000;
 }
 
-.manufacturing__video:hover .manufacturing__video-svg {
-  transform: scale(1.2);
-}
-
 .manufacturing__video-button {
   position: absolute;
   top: 50%;
@@ -50,4 +46,10 @@
 
 .manufacturing__video-svg {
   transition: transform 0.1s;
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .manufacturing__video:hover .manufacturing__video-svg {
+    transform: scale(1.2);
+  }
 }

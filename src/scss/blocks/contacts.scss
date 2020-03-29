@@ -33,7 +33,6 @@
   color: $main-text-color;
   text-decoration-color: $link-hover-color;
 
-  &:hover,
   &:focus {
     color: $link-hover-color;
   }
@@ -60,5 +59,11 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url(../img/picture/map-mobile@2x.jpg);
+  }
+}
+
+@media(hover: hover) and (pointer: fine) {
+  .contacts__table-link:hover {
+    color: $link-hover-color;
   }
 }
