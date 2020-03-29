@@ -1,3 +1,21 @@
+@media(hover: hover) and (pointer: fine) {
+  .mobile-nav__link[href]:hover {
+    color: $heading-text-hover;
+  }
+
+  .mobile-nav__search-form:hover .mobile-nav__search-icon {
+    fill: $icon-fill-hover;
+  }
+
+  .mobile-nav__search-form-input:hover::placeholder {
+    color: $heading-text-hover;
+  }
+
+  .mobile-nav__link--cart:hover .mobile-nav__cart-icon {
+    fill: $icon-fill-hover;
+  }
+}
+
 .mobile-nav__list {
   padding: 0;
   margin: 0;
@@ -85,23 +103,5 @@
   &:active .mobile-nav__cart-icon,
   &:focus .mobile-nav__cart-icon {
     fill: $icon-fill-active;
-  }
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .mobile-nav__link[href]:hover {
-    color: $heading-text-hover;
-  }
-
-  .mobile-nav__search-form:hover .mobile-nav__search-icon {
-    fill: $icon-fill-hover;
-  }
-
-  .mobile-nav__search-form-input:hover::placeholder {
-    color: $heading-text-hover;
-  }
-
-  .mobile-nav__link--cart:hover .mobile-nav__cart-icon {
-    fill: $icon-fill-hover;
   }
 }

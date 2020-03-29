@@ -1,3 +1,13 @@
+@media(hover: hover) and (pointer: fine) {
+  .main-header__link:hover[href] {
+    opacity: 0.6;
+  }
+
+  .main-header__nav-btn:hover {
+    opacity: 0.4;
+  }
+}
+
 .main-header {
   display: flex;
   flex-direction: column;
@@ -65,14 +75,4 @@
 
 #icon-menu-close {
   fill: #231F20;
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .main-header__link:hover[href] {
-    opacity: 0.6;
-  }
-
-  .main-header__nav-btn:hover {
-    opacity: 0.4;
-  }
 }

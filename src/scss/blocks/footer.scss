@@ -1,3 +1,13 @@
+@media(hover: hover) and (pointer: fine) {
+  .footer__social-link:hover .footer__social-icon {
+    fill: $icon-fill-hover;
+  }
+
+  .footer__developed-link:hover .footer__developed-icon {
+    fill: $footer-icon-hover;
+  }
+}
+
 .footer {
   background-color: $footer-background;
 }
@@ -75,14 +85,4 @@
 .footer__developed-icon,
 .footer__social-icon {
   transition: fill 0.2s;
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .footer__social-link:hover .footer__social-icon {
-    fill: $icon-fill-hover;
-  }
-
-  .footer__developed-link:hover .footer__developed-icon {
-    fill: $footer-icon-hover;
-  }
 }

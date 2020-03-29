@@ -1,3 +1,9 @@
+@media(hover: hover) and (pointer: fine) {
+  .contacts__table-link:hover {
+    color: $link-hover-color;
+  }
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -59,11 +65,5 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url(../img/picture/map-mobile@2x.jpg);
-  }
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .contacts__table-link:hover {
-    color: $link-hover-color;
   }
 }

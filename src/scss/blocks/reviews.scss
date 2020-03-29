@@ -1,3 +1,14 @@
+@media(hover: hover) and (pointer: fine) {
+  .reviews__reviewer-link:hover {
+    text-decoration: underline;
+    color: $link-hover-color;
+  }
+
+  .reviews__comment-button:hover .reviews__prev-icon {
+    opacity: 0.6;
+  }
+}
+
 .reviews::after {
   content: '';
   display: block;
@@ -87,15 +98,4 @@
 
 .reviews__send-link {
   margin-bottom: 45px;
-}
-
-@media(hover: hover) and (pointer: fine) {
-  .reviews__reviewer-link:hover {
-    text-decoration: underline;
-    color: $link-hover-color;
-  }
-
-  .reviews__comment-button:hover .reviews__prev-icon {
-    opacity: 0.6;
-  }
 }
