@@ -23,11 +23,11 @@
   font-weight: 500;
   font-size: 17px;
 
-  &:focus {
+  &:focus[href] {
     color: $heading-text-hover;
   }
 
-  &:active {
+  &:active[href] {
     color: $heading-text-active;
   }
 }
@@ -89,7 +89,7 @@
 }
 
 @media(hover: hover) and (pointer: fine) {
-  .mobile-nav__link:hover {
+  .mobile-nav__link[href]:hover {
     color: $heading-text-hover;
   }
 
