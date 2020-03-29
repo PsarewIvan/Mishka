@@ -1,0 +1,23 @@
+.main-form__headline-wrapper {
+  margin-bottom: 25px;
+
+  background-color: $heading-bg-color;
+}
+
+.main-form__headline {
+  width: $mobile-width;
+  padding: 70px 0 75px;
+  margin: 0 auto;
+
+  font-size: 27px;
+  line-height: 1.1;
+  color: $heading-text-color;
+}
+
+.main-form__description {
+  width: $mobile-width;
+  margin: 0 auto 25px;
+
+  font-size: 13px;
+  line-height: 1.85;
+}
