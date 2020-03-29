@@ -8,45 +8,64 @@
   <title>Mishka. Форма заказа</title>
 </head>
 <body>
+
   <!-- Вставка svg спрайта для поддержки IE -->
   <div style="display: none">
     <include src="build/img/svgSprite/sprite.svg"></include>
   </div>
+
   <header class="main-header">
     <h1 class="visually-hidden">Mishka - онлайн магазин вязанных товаров для дома</h1>
     <div class="main-header__link-wrapper">
-      <a class="main-header__link" href="index.html">
-        <span class="visually-hidden">Mishka</span>
-        <picture>
-          <source srcset="img/icon/logo-desktop.svg" media="(min-width: 1150px)">
-          <source srcset="img/icon/logo-tablet.svg" media="(min-width: 768px)">
-          <img class="main-header__logo-icon" src="img/icon/logo-mobile.svg" alt="Mishka Logo" width="86">
-        </picture>
-      </a>
-      <button class="main-header__nav-btn header__nav-btn--close js--header__nav-btn display-none" type="button">
-        <span class="visually-hidden">Меню навигации</span>
-      </button>
+      <div class="main-header__link-sub-wrapper">
+        <a class="main-header__link" href="index.html">
+          <span class="visually-hidden">Mishka</span>
+          <picture>
+            <source srcset="img/icon/logo-desktop.svg" media="(min-width: 1150px)">
+            <source srcset="img/icon/logo-tablet.svg" media="(min-width: 768px)">
+            <img class="main-header__logo-icon" src="img/icon/logo-mobile.svg" alt="Mishka Logo" width="86">
+          </picture>
+        </a>
+        <button class="main-header__nav-btn display-none" type="button">
+          <span class="visually-hidden">Меню навигации</span>
+          <svg class="main-header__nav-btn-icon" width="21" height="21">
+            <use xlink:href="#icon-menu-close"></use>
+          </svg>
+        </button>
+      </div>
     </div>
     <div class="main-header__nav-wrapper">
       <nav class="main-header__nav main-nav">
         <div class="main-nav__mobile mobile-nav">
           <ul class="mobile-nav__list">
             <li class="mobile-nav__li">
-              <a class="mobile-nav__link">Каталог товаров</a>
+              <a class="mobile-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="mobile-nav__li">
-              <a class="mobile-nav__link" href="#">Вязание на заказ</a>
+              <a class="mobile-nav__link">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="mobile-nav__list">
             <li class="mobile-nav__li">
               <form class="mobile-nav__search-form" method="POST" action="https://echo.htmlacademy.ru">
-                <label class="visually-hidden" for="navSearch">Поиск по сайту</label>
-                <input class="mobile-nav__search-form-input" id="navSearch" type="text" name="userSearch" placeholder="Поиск по сайту">
+                <input class="mobile-nav__search-form-input" id="navSearch" type="text" name="userSearch"
+                  placeholder="Поиск по сайту">
+                <label class="mobile-nav__search-label" for="navSearch">
+                  <span class="visually-hidden">Поиск по сайту</span>
+                  <svg class="mobile-nav__search-icon" width="17" height="17" aria-hidden="true">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </label>
               </form>
             </li>
             <li class="mobile-nav__li">
-              <a class="mobile-nav__link" href="#">Корзина:&ensp;<span id="numberOfCartItems">пока пуста</span></a>
+              <a class="mobile-nav__link mobile-nav__link--cart" href="#">
+                Корзина:&ensp;
+                <span id="numberOfCartItems">пока пуста</span>
+                <svg class="mobile-nav__cart-icon" width="20" height="19" aria-hidden="true">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -220,48 +239,48 @@
       </div>
     </form>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__main-logo-wrapper">
-        <a class="main-footer__link-index" href="index.html">
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__main-logo-wrapper">
+        <a class="footer__link-index">
           <span class="visually-hidden">Главная</span>
-          <svg class="main-footer__logo-icon" width="101" height="34" aria-hidden="true">
+          <svg class="footer__logo-icon" width="101" height="34" aria-hidden="true">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
       </div>
-      <div class="main-footer__social-wrapper">
-        <ul class="main-footer__social-list">
-          <li class="main-footer__social-li">
-            <a class="main-footer__social-link" href="#">
+      <div class="footer__social-wrapper">
+        <ul class="footer__social-list">
+          <li class="footer__social-li">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">instagram</span>
-              <svg class="main-footer__social-icon" width="21" height="21" aria-hidden="true">
+              <svg class="footer__social-icon" width="21" height="21" aria-hidden="true">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
-          <li class="main-footer__social-li">
-            <a class="main-footer__social-link" href="#">
+          <li class="footer__social-li">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg class="main-footer__social-icon" width="15" height="28" aria-hidden="true">
+              <svg class="footer__social-icon" width="15" height="28" aria-hidden="true">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
-          <li class="main-footer__social-li">
-            <a class="main-footer__social-link" href="#">
+          <li class="footer__social-li">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">twitter</span>
-              <svg class="main-footer__social-icon" width="23" height="20" aria-hidden="true">
+              <svg class="footer__social-icon" width="23" height="20" aria-hidden="true">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__developed">
-        <a class="main-footer__developed-link" href="htmlacademy.ru">
-          <span class="main-footer__link-text">Разработано</span>
-          <svg class="main-footer__developed-icon" width="27" height="34" aria-hidden="true">
+      <div class="footer__developed">
+        <a class="footer__developed-link" href="htmlacademy.ru">
+          <span class="footer__link-text">Разработано</span>
+          <svg class="footer__developed-icon" width="27" height="34" aria-hidden="true">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
