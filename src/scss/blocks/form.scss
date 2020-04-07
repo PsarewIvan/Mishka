@@ -1,0 +1,132 @@
+.form {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.form__fieldset {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+}
+
+.form__legend {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 25px;
+
+  font-size: 17px;
+  line-height: 0.95;
+  font-weight: 700;
+  color: $form-heading;
+
+  background-image:
+    linear-gradient(to bottom, transparent 0, transparent 10px, $form-heading 10px, $form-heading 11px, transparent 11px, transparent 100%);
+}
+
+.form__legend-text {
+  padding-right: 25px;
+
+  background-color: $body-background;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__li {
+  min-height: 2.6em;
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+
+.form__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.05;
+  color: $heading-text-color;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__label--type,
+.form__label--checkbox {
+  position: relative;
+
+  margin-left: 60px;
+  display: inline-block;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    left: -60px;
+    top: -0.6em;
+
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid $main-text-color;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    display: none;
+  }
+}
+
+.form__label--type::before {
+  border-radius: 50%;
+}
+
+.form__label--type::after {
+  left: -48px;
+  top: 0.1em;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: $form-checked;
+}
+
+.form__label--checkbox::after {
+  left: -48px;
+  top: 0.1em;
+
+  width: 22px;
+  height: 10px;
+  box-sizing: border-box;
+
+  border-left: 2px solid $main-text-color;
+  border-bottom: 2px solid $main-text-color;
+
+  transform: rotate(-44deg);
+}
+
+.form__label:hover::before {
+  border-color: $form-checked;
+}
+
+.form__label:active::before {
+  border-color: $main-text-color;
+
+  opacity: 0.3;
+}
+
+.form__input:checked + .form__label::after {
+  display: block;
+}

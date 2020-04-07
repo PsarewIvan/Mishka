@@ -179,7 +179,7 @@
         <ul class="form__list">
           <li class="form__li">
             <label class="form__label" for="userName">Имя:</label>
-            <input  class="form__input"
+            <input  class="form__input form__input--text"
               type="text"
               id="userName"
               name="userName"
@@ -188,7 +188,7 @@
           </li>
           <li class="form__li">
             <label class="form__label" for="userSurname">Фамилия:</label>
-            <input  class="form__input"
+            <input  class="form__input form__input--text"
               type="text"
               id="userSurname"
               name="userSurname"
@@ -197,7 +197,7 @@
           </li>
           <li class="form__li">
             <label class="form__label" for="userPatronymic">Отчество:</label>
-            <input  class="form__input"
+            <input  class="form__input form__input--text"
               type="text"
               id="userPatronymic"
               name="userPatronymic"
@@ -210,7 +210,7 @@
           <span class="form__legend-text">тел</span>
         </legend>
         <div class="form__input-wrapper">
-          <input  class="form__input"
+          <input  class="form__input form__input--text"
             type="tel"
             id="userTel"
             name="userTel"
@@ -224,7 +224,7 @@
           <span class="form__legend-text">E-mail</span>
         </legend>
         <div class="form__input-wrapper">
-          <input  class="form__input"
+          <input  class="form__input form__input--text"
             type="tel"
             id="userEmail"
             name="userEmail"
@@ -239,10 +239,11 @@
         </legend>
         <div class="form__input-wrapper">
           <label class="visually-hidden" for="userAdditionalWishes">Дополнительные пожелания:</label>
-          <textarea name="userAdditionalWishes"
-                    id="userAdditionalWishes"
-                    cols="30" rows="10"
-                    placeholder="Опишите все ваши  пожелания к заказу"></textarea>
+          <textarea class="form__input form__input--area"
+            name="userAdditionalWishes"
+            id="userAdditionalWishes"
+            cols="30" rows="10"
+            placeholder="Опишите все ваши  пожелания к заказу"></textarea>
         </div>
       </fieldset>
       <div class="form__footer">
