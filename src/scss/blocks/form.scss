@@ -12,6 +12,10 @@
   &:not(:last-of-type) {
     margin-bottom: 30px;
   }
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
 }
 
 .form__legend {
@@ -138,18 +142,45 @@
 }
 
 .form__input--text {
+  position: relative;
+
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px 35px 15px 0;
+  z-index: 10;
 
   border: none;
   border-bottom: 2px solid $form-border;
+  background-color: transparent;
+
+  color: $main-text-color;
 
   &::placeholder {
     color: $main-text-color;
     opacity: 0.3;
   }
+
+  &:hover,
+  &:focus {
+    border-color: $icon-fill-hover;
+  }
+
+  &:hover + .form__input-icon,
+  &:focus + .form__input-icon {
+    opacity: 1;
+  }
+
+  &:hover + .form__input-icon svg,
+  &:focus + .form__input-icon svg {
+    fill: $icon-fill-hover;
+  }
+}
+
+.form__input--area {
+  padding: 15px;
+
+  border: 2px solid $form-border;
 }
 
 .form__input-wrapper {
@@ -162,4 +193,13 @@
   top: 10px;
 
   line-height: 0;
+
+  opacity: 0.2;
+}
+
+.form__explanation {
+  margin: 0 0 30px;
+
+  font-size: 14px;
+  line-height: 1.14;
 }
