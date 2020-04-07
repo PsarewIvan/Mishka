@@ -210,13 +210,18 @@
           <span class="form__legend-text">тел</span>
         </legend>
         <div class="form__input-wrapper">
-          <input  class="form__input form__input--text form__input--tel"
+          <input  class="form__input form__input--text"
             type="tel"
             id="userTel"
             name="userTel"
             placeholder="+7 ХХХ ХХ ХХ*"
             required>
           <label class="visually-hidden" for="userTel">Ваш телефон:</label>
+          <span class="form__input-icon form__input-icon--email" aria-hidden="true">
+            <svg class="form__icon-svg" width="25" height="25">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </span>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
@@ -224,13 +229,18 @@
           <span class="form__legend-text">E-mail</span>
         </legend>
         <div class="form__input-wrapper">
-          <input  class="form__input form__input--text form__input--email"
+          <input  class="form__input form__input--text"
             type="tel"
             id="userEmail"
             name="userEmail"
             placeholder="Ваш Email*"
             required>
           <label class="visually-hidden" for="userEmail">Ваш E-mail:</label>
+          <span class="form__input-icon form__input-icon--email" aria-hidden="true">
+            <svg class="form__icon-svg" width="32" height="32">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </span>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">

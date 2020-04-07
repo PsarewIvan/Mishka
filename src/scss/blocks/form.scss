@@ -10,7 +10,7 @@
   border: none;
 
   &:not(:last-of-type) {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -23,9 +23,15 @@
   line-height: 0.95;
   font-weight: 700;
   color: $form-heading;
+  text-transform: uppercase;
 
   background-image:
     linear-gradient(to bottom, transparent 0, transparent 10px, $form-heading 10px, $form-heading 11px, transparent 11px, transparent 100%);
+
+  &--tel,
+  &--email {
+    margin-bottom: 5px ;
+  }
 }
 
 .form__legend-text {
@@ -129,4 +135,31 @@
 
 .form__input:checked + .form__label::after {
   display: block;
+}
+
+.form__input--text {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 0;
+
+  border: none;
+  border-bottom: 2px solid $form-border;
+
+  &::placeholder {
+    color: $main-text-color;
+    opacity: 0.3;
+  }
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__input-icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+
+  line-height: 0;
 }
