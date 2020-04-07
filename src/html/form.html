@@ -97,21 +97,21 @@
         </legend>
         <ul class="form__list">
           <li class="form__li">
-            <label class="form__label" for="accessory">Аксессуар для  интерьера</label>
             <input  class="visually-hidden"
-                    type="radio"
-                    id="accessory"
-                    name="type"
-                    value="typeAccessory"
-                    checked>
+              type="radio"
+              id="accessory"
+              name="type"
+              value="typeAccessory"
+              checked>
+            <label class="form__label form__label--type" for="accessory">Аксессуар для  интерьера</label>
           </li>
           <li class="form__li">
-            <label class="form__label" for="toy">Детская игрушка</label>
             <input  class="visually-hidden"
-                    type="radio"
-                    id="toy"
-                    name="type"
-                    value="typeToy">
+              type="radio"
+              id="toy"
+              name="type"
+              value="typeToy">
+            <label class="form__label form__label--type" for="toy">Детская игрушка</label>
           </li>
         </ul>
       </fieldset>
@@ -121,54 +121,54 @@
         </legend>
         <ul class="form__list">
           <li class="form__li">
+            <input  class="visually-hidden"
+              type="checkbox"
+              id="colorWhite"
+              name="color"
+              value="white"
+              checked>
             <label class="form__label" for="colorWhite">Белый</label>
-            <input  class="visually-hidden"
-                    type="checkbox"
-                    id="colorWhite"
-                    name="color"
-                    value="white"
-                    checked>
           </li>
           <li class="form__li">
+            <input  class="visually-hidden"
+              type="checkbox"
+              id="colorGrey"
+              name="color"
+              value="grey"
+              checked>
             <label class="form__label" for="colorGrey">Серый</label>
-            <input  class="visually-hidden"
-                    type="checkbox"
-                    id="colorGrey"
-                    name="color"
-                    value="grey"
-                    checked>
           </li>
           <li class="form__li">
+            <input  class="visually-hidden"
+              type="checkbox"
+              id="colorTiffany"
+              name="color"
+              value="tiffany">
             <label class="form__label" for="colorTiffany">«Тиффани»</label>
-            <input  class="visually-hidden"
-                    type="checkbox"
-                    id="colorTiffany"
-                    name="color"
-                    value="tiffany">
           </li>
           <li class="form__li">
+            <input  class="visually-hidden"
+              type="checkbox"
+              id="colorBlack"
+              name="color"
+              value="black">
             <label class="form__label" for="colorBlack">Черный</label>
-            <input  class="visually-hidden"
-                    type="checkbox"
-                    id="colorBlack"
-                    name="color"
-                    value="black">
           </li>
           <li class="form__li">
+            <input  class="visually-hidden"
+              type="checkbox"
+              id="colorPink"
+              name="color"
+              value="pink">
             <label class="form__label" for="colorPink">Розовый</label>
-            <input  class="visually-hidden"
-                    type="checkbox"
-                    id="colorPink"
-                    name="color"
-                    value="pink">
           </li>
           <li class="form__li">
-            <label class="form__label" for="colorOrange">Оранжевый</label>
             <input  class="visually-hidden"
-                    type="checkbox"
-                    id="colorOrange"
-                    name="color"
-                    value="orange">
+              type="checkbox"
+              id="colorOrange"
+              name="color"
+              value="orange">
+            <label class="form__label" for="colorOrange">Оранжевый</label>
           </li>
         </ul>
       </fieldset>
@@ -180,28 +180,28 @@
           <li class="form__li">
             <label class="form__label" for="userName">Имя:</label>
             <input  class="form__input"
-                    type="text"
-                    id="userName"
-                    name="userName"
-                    placeholder="Введите ваше имя*"
-                    required>
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="Введите ваше имя*"
+              required>
           </li>
           <li class="form__li">
             <label class="form__label" for="userSurname">Фамилия:</label>
             <input  class="form__input"
-                    type="text"
-                    id="userSurname"
-                    name="userSurname"
-                    placeholder="Укажите фамилию*"
-                    required>
+              type="text"
+              id="userSurname"
+              name="userSurname"
+              placeholder="Укажите фамилию*"
+              required>
           </li>
           <li class="form__li">
             <label class="form__label" for="userPatronymic">Отчество:</label>
             <input  class="form__input"
-                    type="text"
-                    id="userPatronymic"
-                    name="userPatronymic"
-                    placeholder="Отчество, если желаете">
+              type="text"
+              id="userPatronymic"
+              name="userPatronymic"
+              placeholder="Отчество, если желаете">
           </li>
         </ul>
       </fieldset>
@@ -210,13 +210,13 @@
           <span class="form__legend-text">тел</span>
         </legend>
         <div class="form__input-wrapper">
-          <label class="visually-hidden" for="userTel">Ваш телефон:</label>
           <input  class="form__input"
-                  type="tel"
-                  id="userTel"
-                  name="userTel"
-                  placeholder="+7 ХХХ ХХ ХХ*"
-                  required>
+            type="tel"
+            id="userTel"
+            name="userTel"
+            placeholder="+7 ХХХ ХХ ХХ*"
+            required>
+          <label class="visually-hidden" for="userTel">Ваш телефон:</label>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
@@ -224,13 +224,13 @@
           <span class="form__legend-text">E-mail</span>
         </legend>
         <div class="form__input-wrapper">
-          <label class="visually-hidden" for="userEmail">Ваш E-mail:</label>
           <input  class="form__input"
-                  type="tel"
-                  id="userEmail"
-                  name="userEmail"
-                  placeholder="Ваш Email*"
-                  required>
+            type="tel"
+            id="userEmail"
+            name="userEmail"
+            placeholder="Ваш Email*"
+            required>
+          <label class="visually-hidden" for="userEmail">Ваш E-mail:</label>
         </div>
       </fieldset>
       <fieldset class="form__fieldset">
