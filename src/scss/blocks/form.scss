@@ -84,6 +84,11 @@
 
   cursor: pointer;
   user-select: none;
+
+  &::before,
+  &::after {
+    transition: 0.2s;
+  }
 }
 
 .form__label--type,
@@ -169,6 +174,8 @@
   background-color: transparent;
 
   color: $main-text-color;
+
+  transition: 0.2s;
 
   &::placeholder {
     color: $main-text-color;

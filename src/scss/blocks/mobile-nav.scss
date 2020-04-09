@@ -105,3 +105,10 @@
     fill: $icon-fill-active;
   }
 }
+
+.mobile-nav__link,
+.mobile-nav__search-form-input::placeholder,
+.mobile-nav__search-icon,
+.mobile-nav__cart-icon {
+  transition: 0.2s;
+}
