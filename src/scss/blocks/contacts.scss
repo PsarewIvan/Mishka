@@ -39,7 +39,7 @@
   color: $main-text-color;
   text-decoration-color: $link-hover-color;
 
-  transition: 0.2s;
+  transition: all 0.2s;
 
   &:focus {
     color: $link-hover-color;

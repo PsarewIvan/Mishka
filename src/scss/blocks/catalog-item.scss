@@ -15,7 +15,7 @@
 .catalog-item {
   border: 1px solid $border-color;
 
-  transition: 0.2s;
+  transition: all 0.2s;
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -60,7 +60,7 @@
   color: $heading-text-color;
   text-decoration: none;
 
-  transition: 0.2s;
+  transition: all 0.2s;
 
   &:focus {
     opacity: 0.6;
@@ -98,11 +98,11 @@
 .catalog-item__cart-icon {
   fill: $icon-fill;
 
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 
 .catalog-item__cart-link {
-  transition: 0.2s;
+  transition: all 0.2s;
 
   &:focus .catalog-item__cart-icon {
     fill: $icon-fill-hover;
