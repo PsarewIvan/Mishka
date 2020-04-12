@@ -205,10 +205,10 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend form__legend--tel">
+      <div class="form__fieldset">
+        <label class="form__legend form__legend--tel" for="userTel">
           <span class="form__legend-text">тел</span>
-        </legend>
+        </label>
         <div class="form__input-wrapper">
           <input  class="form__input form__input--text"
             type="tel"
@@ -216,18 +216,17 @@
             name="userTel"
             placeholder="+7 ХХХ ХХ ХХ*"
             required>
-            <span class="form__input-icon form__input-icon--email" aria-hidden="true">
-              <svg class="form__icon-svg" width="25" height="25">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
-            </span>
-            <label class="visually-hidden" for="userTel">Ваш телефон:</label>
+          <span class="form__input-icon form__input-icon--email" aria-hidden="true">
+            <svg class="form__icon-svg" width="25" height="25">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+          </span>
         </div>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend form__legend--email">
+      </div>
+      <div class="form__fieldset">
+        <label class="form__legend form__legend--email" for="userEmail">
           <span class="form__legend-text">E-mail</span>
-        </legend>
+        </label>
         <div class="form__input-wrapper">
           <input  class="form__input form__input--text"
             type="tel"
@@ -235,27 +234,25 @@
             name="userEmail"
             placeholder="Ваш Email*"
             required>
-            <span class="form__input-icon form__input-icon--email" aria-hidden="true">
-              <svg class="form__icon-svg" width="32" height="32">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-            </span>
-            <label class="visually-hidden" for="userEmail">Ваш E-mail:</label>
+          <span class="form__input-icon form__input-icon--email" aria-hidden="true">
+            <svg class="form__icon-svg" width="32" height="32">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+          </span>
         </div>
-      </fieldset>
-      <fieldset class="form__fieldset">
-        <legend class="form__legend form__legend--extends">
+      </div>
+      <div class="form__fieldset">
+        <label class="form__legend form__legend--extends" for="userAdditionalWishes">
           <span class="form__legend-text">Доп</span>
-        </legend>
+        </label>
         <div class="form__input-wrapper">
-          <label class="visually-hidden" for="userAdditionalWishes">Дополнительные пожелания:</label>
           <textarea class="form__input form__input--text form__input--area"
             name="userAdditionalWishes"
             id="userAdditionalWishes"
             cols="30" rows="10"
             placeholder="Опишите все ваши  пожелания к заказу"></textarea>
         </div>
-      </fieldset>
+      </div>
       <div class="form__footer">
         <p class="form__explanation">*Поля обязательны для заполнения</p>
         <div class="form__button-wrapper">
