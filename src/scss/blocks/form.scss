@@ -194,7 +194,7 @@
 
   line-height: 0;
 
-  opacity: 0.2;
+  // opacity: 0.2;
 }
 
 .form__explanation {
@@ -202,4 +202,10 @@
 
   font-size: 14px;
   line-height: 1.14;
+}
+
+.form__input-icon svg {
+  fill: $icon-form-fill;
+
+  transition: fill 0.2s;
 }
