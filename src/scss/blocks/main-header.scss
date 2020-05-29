@@ -86,6 +86,32 @@
   }
 }
 
-#icon-menu-close {
-  fill: #231F20;
+@media (min-width: $tablet-media) {
+  .main-header {
+    position: relative;
+  }
+
+  .main-header__link-wrapper {
+    position: absolute;
+
+    margin-left: 50%;
+
+    border: none;
+    transform: translateX(-$tablet-width/2);
+  }
+
+  .main-header__link-sub-wrapper {
+    position: relative;
+
+    min-height: 88px;
+    width: 167px;
+  }
+
+  .main-header__logo-icon {
+    left: 0;
+
+    width: 112px;
+
+    transform: translateY(-50%);
+  }
 }
