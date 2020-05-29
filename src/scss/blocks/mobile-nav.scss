@@ -119,9 +119,7 @@
     flex-direction: column;
   }
 
-  .mobile-nav__list-wrapper:last-child {
-    order: -1;
-
+  .mobile-nav__list-wrapper--top {
     border-bottom: 1px solid #ececec;
 
     .mobile-nav__list {
@@ -159,6 +157,22 @@
 
     .mobile-nav__cart-icon {
       left: 30px;
+    }
+  }
+
+  .mobile-nav__list-wrapper--bottom {
+    order: 1;
+
+    background-color: $promo-background;
+
+    .mobile-nav__li {
+      margin-top: 20px;
+
+      border-bottom: none;
+    }
+
+    .mobile-nav__link {
+      min-height: auto;
     }
   }
 

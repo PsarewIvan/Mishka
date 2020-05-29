@@ -4,7 +4,22 @@
 }
 
 @media (min-width: $tablet-media) {
+  .main-nav {
+    position: relative;
+  }
+
   .main-nav__tablet {
+    position: absolute;
+    right: 0;
+    top: 109px;
+
     display: block;
+    margin-right: 50%;
+
+    transform: translateX($tablet-width/2);
+  }
+
+  .main-nav__descr {
+    margin: 0;
   }
 }
