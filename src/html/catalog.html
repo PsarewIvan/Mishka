@@ -26,50 +26,51 @@
             <img class="main-header__logo-icon" src="img/icon/logo-mobile.svg" alt="Mishka Logo" width="86">
           </picture>
         </a>
-        <button class="main-header__nav-btn display-none" type="button">
+        <button class="main-header__nav-btn main-header__nav-btn--close js--main-header__nav-btn display-none" type="button">
           <span class="visually-hidden">Меню навигации</span>
-          <svg class="main-header__nav-btn-icon" width="21" height="21">
-            <use xlink:href="#icon-menu-close"></use>
-          </svg>
         </button>
       </div>
     </div>
     <div class="main-header__nav-wrapper">
-      <nav class="main-header__nav main-nav">
+      <nav class="main-header__nav main-nav js--main-nav">
         <div class="main-nav__mobile mobile-nav">
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__li">
-              <a class="mobile-nav__link">Каталог товаров</a>
-            </li>
-            <li class="mobile-nav__li">
-              <a class="mobile-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="mobile-nav__list">
-            <li class="mobile-nav__li">
-              <form class="mobile-nav__search-form" method="POST" action="https://echo.htmlacademy.ru">
-                <input class="mobile-nav__search-form-input" id="navSearch" type="text" name="userSearch"
-                  placeholder="Поиск по сайту">
-                <label class="mobile-nav__search-label" for="navSearch">
-                  <span class="visually-hidden">Поиск по сайту</span>
-                  <svg class="mobile-nav__search-icon" width="17" height="17" aria-hidden="true">
-                    <use xlink:href="#icon-search"></use>
+          <div class="mobile-nav__list-wrapper--bottom">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__li">
+                <a class="mobile-nav__link">Каталог товаров</a>
+              </li>
+              <li class="mobile-nav__li">
+                <a class="mobile-nav__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile-nav__list-wrapper--top">
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__li">
+                <form class="mobile-nav__search-form" method="POST" action="https://echo.htmlacademy.ru">
+                  <input class="mobile-nav__search-form-input" id="navSearch" type="text" name="userSearch"
+                    placeholder="Поиск по сайту">
+                  <label class="mobile-nav__search-label" for="navSearch">
+                    <span class="visually-hidden">Поиск по сайту</span>
+                    <svg class="mobile-nav__search-icon" width="17" height="17" aria-hidden="true">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  </label>
+                </form>
+              </li>
+              <li class="mobile-nav__li">
+                <a class="mobile-nav__link mobile-nav__link--cart" href="#">
+                  Корзина:&ensp;
+                  <span id="numberOfCartItems">пока пуста</span>
+                  <svg class="mobile-nav__cart-icon" width="20" height="19" aria-hidden="true">
+                    <use xlink:href="#icon-cart"></use>
                   </svg>
-                </label>
-              </form>
-            </li>
-            <li class="mobile-nav__li">
-              <a class="mobile-nav__link mobile-nav__link--cart" href="#">
-                Корзина:&ensp;
-                <span id="numberOfCartItems">пока пуста</span>
-                <svg class="mobile-nav__cart-icon" width="20" height="19" aria-hidden="true">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="main-nav__desktop desktop-nav display-none">
+        <div class="main-nav__desktop desktop-nav">
           <ul class="desktop-nav__desktop-list">
             <li class="desktop-nav__li">
               <a class="desktop-nav__link" href="#">Новые поступления</a>
@@ -79,7 +80,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-nav__tablet display-none">
+        <div class="main-nav__tablet">
           <p class="main-nav__descr">Бесплатная доставка по России</p>
         </div>
       </nav>
