@@ -132,19 +132,28 @@
     }
 
     .mobile-nav__search-form {
+      width: auto;
       min-height: 88px;
     }
 
     .mobile-nav__search-form-input {
       width: 82px;
       padding: 0;
+
+      transition: all 0.2s;
+
+      &:focus {
+        width: 250px;
+        padding-right: 60px;
+      }
     }
 
     .mobile-nav__search-icon {
       top: 50%;
-      left: 50%;
+      left: auto;
+      right: 30px;
 
-      transform: translate(-50%, -50%);
+      transform: translateY(-50%);
     }
 
     .mobile-nav__link {
