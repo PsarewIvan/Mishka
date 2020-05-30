@@ -26,3 +26,35 @@
   line-height: 1.1;
   color: $heading-text-color;
 }
+
+@media (min-width: $tablet-media) {
+  .promo {
+    background-image: url(../img/picture/hero-tablet@1x.jpg);
+    background-size: 1150px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/picture/hero-tablet@2x.jpg);
+    }
+  }
+
+  .promo__head {
+    width: $tablet-width;
+    margin-top: 155px;
+    margin-bottom: 375px;
+  }
+
+  .promo__head-text {
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktop-media) {
+  .promo {
+    background-image: url(../img/picture/hero-desktop@1x.jpg);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/picture/hero-desktop@2x.jpg);
+    }
+  }
+}
