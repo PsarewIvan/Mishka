@@ -73,3 +73,33 @@
 .best-product__button {
   margin-bottom: 35px;
 }
+
+@media (min-width: $tablet-media) {
+  .best-product::after {
+    height: 17px;
+  }
+
+  .best-product__wrapper {
+    position: relative;
+
+    width: $tablet-width;
+  }
+
+  .best-product__heading {
+    max-width: 75%;
+    margin-bottom: 55px;
+
+    font-size: 43px;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+
+      width: 100px;
+      margin: 0;
+
+      text-align: center;
+    }
+  }
+}
