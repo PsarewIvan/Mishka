@@ -82,10 +82,19 @@
   .best-product__wrapper {
     position: relative;
 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'heading heading'
+      'description img'
+      'order img';
     width: $tablet-width;
+    margin-bottom: 50px;
   }
 
   .best-product__heading {
+    grid-area: heading;
+
     max-width: 75%;
     margin-bottom: 55px;
 
@@ -101,5 +110,43 @@
 
       text-align: center;
     }
+  }
+
+  .best-product__descr-block {
+    grid-area: description;
+
+    padding-right: 45px;
+  }
+
+  .best-product__descr {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .best-product__img-block {
+    grid-area: img;
+
+    margin: 0;
+
+    line-height: 0;
+  }
+
+  .best-product__order-block {
+    grid-area: order;
+
+    display: flex;
+    flex-direction: column;
+    padding-right: 45px;
+  }
+
+  .best-product__price {
+    margin: auto 0 30px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .best-product__button {
+    margin: 0;
   }
 }
