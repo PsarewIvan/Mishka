@@ -1,6 +1,7 @@
 .promo {
   display: flex;
   flex-direction: column;
+
   background-color: $promo-background;
   background-image: url(../img/picture/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
@@ -21,10 +22,10 @@
 .promo__head-text {
   margin: 0;
 
-  text-align: center;
   font-size: 27px;
   line-height: 1.1;
   color: $heading-text-color;
+  text-align: center;
 }
 
 @media (min-width: $tablet-media) {

@@ -1,6 +1,7 @@
 .about-us__heading {
   width: $mobile-width;
   margin: 0 auto 25px;
+
   font-size: 25px;
   line-height: 1.2;
   color: black;
@@ -16,11 +17,13 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .about-us__text {
   margin: 0;
+
   font-size: 17px;
   line-height: 1.2;
   font-weight: 500;
@@ -39,6 +42,7 @@
     display: block;
     width: 54px;
     height: 38px;
+
     background-repeat: no-repeat;
   }
 

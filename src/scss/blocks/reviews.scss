@@ -1,7 +1,7 @@
 @media(hover: hover) and (pointer: fine) {
   .reviews__reviewer-link:hover {
-    text-decoration: underline;
     color: $link-hover-color;
+    text-decoration: underline;
   }
 
   .reviews__comment-button:hover .reviews__prev-icon {
@@ -11,9 +11,11 @@
 
 .reviews::after {
   content: '';
+
   display: block;
   width: 100%;
   height: 6px;
+
   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.5 23"%3E%3Cg%3E%3Cpath fill="%23E6E7E8" d="M57.5,23c-9,0-13.7-4.6-17.5-8.3C36.6,11.4,34.1,9,28.8,9s-7.8,2.4-11.2,5.7C13.7,18.4,9,23,0,23v-9 c5.4,0,7.8-2.4,11.2-5.7C15,4.6,19.7,0,28.8,0s13.7,4.6,17.5,8.3c3.4,3.3,5.9,5.7,11.2,5.7"/%3E%3C/g%3E%3C/svg%3E');
   background-position: center;
 }
@@ -26,6 +28,7 @@
 .reviews__heading {
   width: $mobile-width;
   margin: 0 0 25px;
+
   font-size: 25px;
   line-height: 1.2;
   color: black;
@@ -34,6 +37,7 @@
 .reviews__list {
   margin: 0 0 25px;
   padding: 0;
+
   list-style: none;
 }
 
@@ -43,19 +47,21 @@
 
 .reviews__text {
   margin: 0 0 30px;
+
   line-height: 2;
 }
 
 .reviews__reviewer-name {
   margin: 0 0 10px;
+
   font-size: 17px;
   font-weight: 500;
 }
 
 .reviews__reviewer-link {
   font-size: 17px;
-  text-decoration: none;
   color: $main-text-color;
+  text-decoration: none;
 
   transition: all 0.2s;
 
@@ -85,8 +91,10 @@
 .reviews__comment-button {
   width: 50%;
   min-height: 50px;
+
   background-color: transparent;
   border: 1px solid #ececec;
+
   cursor: pointer;
 
   &:focus .reviews__prev-icon {
