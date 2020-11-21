@@ -15,3 +15,9 @@
 .main__form {
   margin-bottom: 55px;
 }
+
+@media (min-width: $tablet-media) {
+  .main__promo {
+    margin-bottom: 50px;
+  }
+}
