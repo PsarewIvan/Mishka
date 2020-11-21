@@ -17,7 +17,8 @@
 }
 
 @media (min-width: $tablet-media) {
-  .main__promo {
+  .main__promo,
+  .main__best-product {
     margin-bottom: 50px;
   }
 }
