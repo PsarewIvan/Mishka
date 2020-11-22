@@ -71,3 +71,9 @@
     background-image: url(../img/picture/map-mobile@2x.jpg);
   }
 }
+
+@media (min-width: $tablet-media) {
+  .contacts__heading {
+    font-size: $tablet-heading-size;
+  }
+}
