@@ -74,6 +74,63 @@
 
 @media (min-width: $tablet-media) {
   .contacts__heading {
+    position: relative;
+
+    margin-bottom: 50px;
+
     font-size: $tablet-heading-size;
+    line-height: 1.2;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: -15px;
+      right: 0;
+
+      display: block;
+      width: 47px;
+      height: 82px;
+
+      background-image: url(../img/icon/icon-flag.svg);
+    }
+  }
+
+  .contacts__desktop-block {
+    width: $tablet-width;
+    margin-bottom: 55px;
+  }
+
+  .contacts__tables-wrapper {
+    display: flex;
+  }
+
+  .contacts__table {
+    width: 50%;
+
+    font-size: 17px;
+    line-height: 1.75;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__map {
+    margin-bottom: 55px;
+
+    background-image: url(../img/picture/map-tablet@1x.jpg);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/picture/map-tablet@2x.jpg);
+    }
+  }
+
+  .contacts__contact-link {
+    width: 230px;
+  }
+
+  .contacts__contact-button {
+    padding: 13px 0;
   }
 }
