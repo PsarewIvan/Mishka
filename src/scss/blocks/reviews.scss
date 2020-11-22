@@ -109,3 +109,89 @@
 .reviews__send-link {
   margin-bottom: 45px;
 }
+
+@media (min-width: $tablet-media) {
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    min-height: 545px;
+
+    background-image: url(../img/picture/review@1x.jpg);
+    background-repeat: no-repeat;
+
+    &::after {
+      height: 17px;
+      margin-top: auto;
+    }
+  }
+
+  .reviews__wrapper {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      'heading button'
+      'text text'
+      'email .';
+    width: $tablet-width;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+
+  .reviews__heading {
+    grid-area: heading;
+    width: 100%;
+    margin: 0 0 50px;
+
+    font-size: 43px;
+  }
+
+  .reviews__list {
+    grid-area: text;
+    margin: 0;
+  }
+
+  .reviews__li {
+    margin: 0;
+  }
+
+  .reviews__quote {
+    display: flex;
+    flex-direction: column;
+    min-height: 230px;
+  }
+
+  .reviews__text {
+    margin-bottom: auto;
+
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  .reviews__reviewer-name {
+    margin-bottom: 5px;
+  }
+
+  .reviews__nav-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 25%;
+    margin: 0;
+  }
+
+  .reviews__comment-button {
+    border: none;
+  }
+
+  .reviews__send-link {
+    grid-area: button;
+    margin: 0;
+  }
+
+  .reviews__send-button {
+    padding: 13px 0;
+  }
+}
