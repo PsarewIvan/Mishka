@@ -131,3 +131,15 @@
     margin: 0 35px;
   }
 }
+
+@media (min-width: $desktop-media) {
+  .promo-list__list {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .promo-list__link {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
