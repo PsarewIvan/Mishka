@@ -116,3 +116,25 @@
     transform: translateY(-50%);
   }
 }
+
+@media (min-width: $desktop-media) {
+  .main-header__nav-wrapper {
+    width: $desktop-media;
+    margin: 0 auto;
+  }
+
+  .main-header__link-wrapper {
+    transform: translateX(-50%);
+  }
+
+  .main-header__link picture {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .main-header__link-sub-wrapper,
+  .main-header__logo-icon {
+    width: 150px;
+  }
+}

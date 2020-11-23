@@ -1,0 +1,41 @@
+@media(hover: hover) and (pointer: fine) {
+  .desktop-nav__link:hover {
+    color: $heading-text-hover;
+  }
+}
+
+@media (min-width: $desktop-media) {
+  .desktop-nav__desktop-list {
+    display: flex;
+    min-height: 45px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .desktop-nav__li {
+    display: flex;
+    align-items: flex-end;
+
+    &:not(:last-child) {
+      margin-right: 64px;
+    }
+  }
+
+  .desktop-nav__link {
+    font-weight: bold;
+    text-decoration: none;
+    color: $heading-text-color;
+
+    transition: all 0.2s;
+
+    &:focus {
+    color: $heading-text-hover;
+  }
+
+  &:active {
+    color: $heading-text-active;
+  }
+  }
+}
