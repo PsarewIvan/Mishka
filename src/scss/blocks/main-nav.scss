@@ -23,3 +23,37 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-media) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__desktop {
+    display: block;
+    width: calc(67% - 50px);
+    margin-left: 50px;
+  }
+
+  .main-nav__tablet {
+    position: relative;
+    top: auto;
+    right: auto;
+
+    display: flex;
+    align-items: flex-end;
+    width: calc(33% - 50px);
+    margin-right: 50px;
+
+    transform: none;
+  }
+
+  .main-nav__mobile {
+    width: 100%;
+  }
+
+  .main-nav__descr {
+    margin-left: auto;
+  }
+}
