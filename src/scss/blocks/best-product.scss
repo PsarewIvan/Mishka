@@ -154,3 +154,44 @@
     margin: 0;
   }
 }
+
+@media (min-width: $tablet-media) {
+  .best-product__wrapper {
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas:
+      'description img'
+      'order img';
+
+    width: $desktop-width;
+    margin: 0 auto 70px;
+    padding-left: $desktop-fragment;
+  }
+
+  .best-product__heading {
+    position: absolute;
+    left: $desktop-fragment;
+    top: 55px;
+
+    margin: 0;
+
+    font-size: 53px;
+
+    &::after {
+      top: 12px;
+      left: -150px;
+    }
+  }
+
+  .best-product__descr-block,
+  .best-product__order-block {
+    padding-right: 55px;
+  }
+
+  .best-product__descr-block {
+    margin-top: 155px;
+  }
+
+  .best-product__descr {
+    margin-bottom: 40px;
+  }
+}

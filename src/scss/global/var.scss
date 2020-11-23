@@ -5,6 +5,8 @@ $tablet-width: 668px;
 $tablet-media: 768px;
 $desktop-media: 1150px;
 
+$desktop-fragment: $desktop-width / 6;
+
 //Fonts
 $heading-text-color: #000000;
 $main-text-color: #444444;
