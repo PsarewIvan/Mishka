@@ -30,3 +30,13 @@
     margin-bottom: 60px;
   }
 }
+
+@media (min-width: $desktop-media) {
+  .main {
+    margin-top: -46px;
+  }
+
+  .main__promo {
+    padding-top: 46px;
+  }
+}
