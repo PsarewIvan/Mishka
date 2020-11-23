@@ -99,3 +99,29 @@
     line-height: 1.1;
   }
 }
+
+@media (min-width: $desktop-media) {
+  .about-us__heading,
+  .about-us__list-wrapper {
+    width: $desktop-width;
+    padding-left: $desktop-fragment;
+  }
+
+  .about-us__heading {
+    font-size: 53px;
+  }
+
+  .about-us__list {
+    width: $desktop-fragment * 4;
+  }
+
+  .about-us__text {
+    padding-right: 55px;
+  }
+
+  .about-us__li {
+    &::before {
+      margin-bottom: 10px;
+    }
+  }
+}
