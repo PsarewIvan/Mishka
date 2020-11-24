@@ -155,7 +155,14 @@
   }
 }
 
-@media (min-width: $tablet-media) {
+@media (min-width: $desktop-media) {
+  .best-product {
+    &::after {
+      height: 21px;
+      width: $desktop-width;
+      margin: 0 auto;
+    }
+  }
   .best-product__wrapper {
     grid-template-columns: 2fr 3fr;
     grid-template-areas:
