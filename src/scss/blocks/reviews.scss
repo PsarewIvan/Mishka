@@ -112,16 +112,27 @@
 
 @media (min-width: $tablet-media) {
   .reviews {
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    min-height: 545px;
+    min-height: 457px;
+    margin-bottom: 145px;
 
     background-image: url(../img/picture/review@1x.jpg);
     background-repeat: no-repeat;
 
     &::after {
+      position: absolute;
+      bottom: -85px;
+
       height: 17px;
       margin-top: auto;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url(../img/picture/review@2x.jpg);
+      background-size: 45.4% auto;
     }
   }
 
@@ -193,5 +204,44 @@
 
   .reviews__send-button {
     padding: 13px 0;
+  }
+}
+
+@media (min-width: $desktop-media) {
+  .reviews {
+    width: $desktop-width;
+    margin: 0 auto 160px;
+
+    &::after {
+      height: 21px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 33.3% auto;
+    }
+  }
+
+  .reviews__wrapper {
+    grid-template-columns: 4fr 1fr;
+    width: auto;
+    margin-top: 70px;
+    margin-left: $desktop-fragment;
+  }
+
+  .reviews__heading {
+    font-size: 53px;
+    line-height: 1;
+  }
+
+  .reviews__text {
+    padding-right: 100px;
+  }
+
+  .reviews__quote {
+    min-height: 185px;
+  }
+
+  .reviews__nav-block {
+    width: $desktop-fragment;
   }
 }
