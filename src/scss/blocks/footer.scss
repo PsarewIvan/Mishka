@@ -94,7 +94,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: $tablet-width;
-    padding: 40px 0;
+    padding: 32px 0;
   }
 
   .footer__main-logo-wrapper {
@@ -108,5 +108,15 @@
 
   .footer__social-list {
     border: none;
+  }
+}
+
+@media (min-width: $desktop-media) {
+  .footer__wrapper {
+    width: $desktop-width;
+  }
+
+  .footer__developed-link {
+    justify-content: flex-end;
   }
 }
