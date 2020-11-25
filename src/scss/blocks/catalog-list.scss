@@ -5,3 +5,14 @@
 
   list-style: none;
 }
+
+@media (min-width: $tablet-media) {
+  .catalog-list__list {
+    width: $tablet-width;
+    max-width: none;
+  }
+}
+
+// @media (min-width: $desktop-media) {
+
+// }
