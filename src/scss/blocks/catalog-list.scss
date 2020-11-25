@@ -25,6 +25,18 @@
   }
 }
 
-// @media (min-width: $desktop-media) {
+@media (min-width: $desktop-media) {
+  .catalog-list__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
 
-// }
+    width: $desktop-width;
+  }
+
+  .catalog-list__li {
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+}
