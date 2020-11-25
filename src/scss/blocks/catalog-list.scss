@@ -6,10 +6,22 @@
   list-style: none;
 }
 
+.catalog-list__li {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: $tablet-media) {
   .catalog-list__list {
     width: $tablet-width;
     max-width: none;
+  }
+
+  .catalog-list__li {
+    &:not(:last-child) {
+      margin-bottom: 55px;
+    }
   }
 }
 

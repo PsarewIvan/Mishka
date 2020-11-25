@@ -17,10 +17,6 @@
 
   transition: all 0.2s;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
   &:focus-within {
     box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
   }
