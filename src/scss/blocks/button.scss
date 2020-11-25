@@ -38,3 +38,11 @@
 .button--form {
   width: 100%;
 }
+
+@media (min-width: $tablet-media) {
+  .button {
+    &--manufacturing {
+      padding: 13px 0;
+    }
+  }
+}
