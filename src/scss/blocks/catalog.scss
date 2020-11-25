@@ -30,7 +30,7 @@
 
   .catalog__heading-wrapper {
     background-image: url(../img/icon/bg-zigzag-fill.svg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: bottom center;
   }
 
@@ -40,5 +40,11 @@
     padding: 95px 0;
 
     font-size: 43px;
+  }
+}
+
+@media (min-width: $tablet-media) {
+  .catalog__heading {
+    font-size: 53px;
   }
 }
