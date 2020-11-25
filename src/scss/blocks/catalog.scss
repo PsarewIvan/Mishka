@@ -29,6 +29,8 @@
   }
 
   .catalog__heading-wrapper {
+    margin-bottom: 65px;
+
     background-image: url(../img/icon/bg-zigzag-fill.svg);
     background-repeat: repeat-x;
     background-position: bottom center;
@@ -46,5 +48,9 @@
 @media (min-width: $desktop-media) {
   .catalog__heading {
     font-size: 53px;
+  }
+
+  .catalog__heading-wrapper {
+    margin-bottom: 105px;
   }
 }
