@@ -94,3 +94,46 @@
   font-size: 13px;
   line-height: 1.85;
 }
+
+@media (min-width: $tablet-media) {
+  .manufacturing__wrapper {
+    width: $tablet-width;
+    padding: 490px 0 0;
+  }
+
+  .manufacturing__headline {
+    padding-left: 105px;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .manufacturing__headline-icon {
+    left: 40px;
+    top: -6px;
+  }
+
+  .manufacturing__description {
+    margin: 0 40px 30px;
+
+    font-size: 15px;
+    line-height: 2;
+  }
+
+  .manufacturing__button-wrapper {
+    margin: 0 40px 45px;
+  }
+
+  .manufacturing__video {
+    top: 0;
+
+    width: $tablet-width;
+
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+// @media (min-width: $desktop-media) {
+
+// }
