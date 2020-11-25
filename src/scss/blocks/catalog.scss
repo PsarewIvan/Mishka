@@ -28,9 +28,12 @@
     margin-top: -46px;
   }
 
-  .catalog__heading-wrapper {
+  .catalog__heading-wrapper,
+  .catalog__manufacturing {
     margin-bottom: 65px;
+  }
 
+  .catalog__heading-wrapper {
     background-image: url(../img/icon/bg-zigzag-fill.svg);
     background-repeat: repeat-x;
     background-position: bottom center;
