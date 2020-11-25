@@ -22,3 +22,23 @@
 .catalog__manufacturing {
   margin-bottom: 60px;
 }
+
+@media (min-width: $tablet-media) {
+  .catalog {
+    margin-top: -46px;
+  }
+
+  .catalog__heading-wrapper {
+    background-image: url(../img/icon/bg-zigzag-fill.svg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .catalog__heading {
+    width: $tablet-width;
+    max-width: none;
+    padding: 95px 0;
+
+    font-size: 43px;
+  }
+}
