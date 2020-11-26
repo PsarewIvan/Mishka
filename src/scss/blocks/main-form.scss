@@ -21,3 +21,37 @@
   font-size: 13px;
   line-height: 1.85;
 }
+
+.main-form__form {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-media) {
+  .main-form__headline {
+    width: $tablet-width;
+    padding: 95px 0;
+
+    font-size: 43px;
+    line-height: 1.16;
+    text-align: center;
+  }
+
+  .main-form__headline-wrapper {
+    background-image: url(../img/icon/bg-zigzag-fill.svg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
+  }
+
+  .main-form__description {
+    width: $tablet-width;
+    margin: 55px auto;
+
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .main-form__form {
+    width: $tablet-width;
+  }
+}

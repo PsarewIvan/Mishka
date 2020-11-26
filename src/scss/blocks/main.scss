@@ -17,12 +17,14 @@
 }
 
 @media (min-width: $tablet-media) {
-  .main {
+  .main,
+  .main__form {
     margin-top: -45px;
   }
 
   .main__promo,
-  .main__best-product {
+  .main__best-product,
+  .main__form {
     margin-bottom: 50px;
   }
 
