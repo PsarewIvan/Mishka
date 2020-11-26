@@ -337,6 +337,49 @@
   }
 }
 
-// @media (min-width: $desktop-media) {
+@media (min-width: $desktop-media) {
+  .form__fieldset-wrapper {
+    grid-template-columns: 1fr 4fr;
+  }
 
-// }
+  .form__fieldset--type .form__fieldset-wrapper,
+  .form__fieldset--color .form__fieldset-wrapper {
+    grid-template-columns: 1fr 5fr;
+  }
+
+  .form__legend {
+    display: flex;
+  }
+
+  .form__legend-text {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .form__list {
+    &--color {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .form__fieldset--color,
+  .form__fieldset--tel,
+  .form__fieldset--email {
+    &::after {
+      // При использовании переменной в calc() scss не хочет
+      // подставлять в нее число, поэтому стоит 1050px
+      left: calc( (1050px - 100vw) / 2 );
+    }
+  }
+
+  .form__fieldset--name,
+  .form__fieldset--tel,
+  .form__fieldset--email,
+  .form__fieldset--extends {
+    padding-right: $desktop-fragment;
+  }
+
+  .form__footer {
+    padding: 0 $desktop-fragment;
+  }
+}
