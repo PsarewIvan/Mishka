@@ -184,7 +184,7 @@
             <span class="form__legend-text">ФИО</span>
           </legend>
           <ul class="form__list">
-            <li class="form__li">
+            <li class="form__li form__li--name">
               <label class="form__label form__label--text" for="userName">Имя:</label>
               <input  class="form__input form__input--text"
                 type="text"
@@ -193,7 +193,7 @@
                 placeholder="Введите ваше имя*"
                 required>
             </li>
-            <li class="form__li">
+            <li class="form__li form__li--name">
               <label class="form__label form__label--text" for="userSurname">Фамилия:</label>
               <input  class="form__input form__input--text"
                 type="text"
@@ -202,7 +202,7 @@
                 placeholder="Укажите фамилию*"
                 required>
             </li>
-            <li class="form__li">
+            <li class="form__li form__li--name">
               <label class="form__label form__label--text" for="userPatronymic">Отчество:</label>
               <input  class="form__input form__input--text"
                 type="text"
@@ -213,8 +213,8 @@
           </ul>
         </div>
       </fieldset>
-      <div class="form__fieldset">
-        <div class="form__fieladset-wrapper">
+      <div class="form__fieldset form__fieldset--tel">
+        <div class="form__fieldset-wrapper">
           <label class="form__legend form__legend--tel" for="userTel">
             <span class="form__legend-text">тел</span>
           </label>
@@ -233,7 +233,7 @@
           </div>
         </div>
       </div>
-      <div class="form__fieldset">
+      <div class="form__fieldset form__fieldset--email">
         <div class="form__fieldset-wrapper">
           <label class="form__legend form__legend--email" for="userEmail">
             <span class="form__legend-text">E-mail</span>
@@ -262,7 +262,7 @@
             <textarea class="form__input form__input--text form__input--area"
               name="userAdditionalWishes"
               id="userAdditionalWishes"
-              cols="30" rows="10"
+              cols="30" rows="5"
               placeholder="Опишите все ваши  пожелания к заказу"></textarea>
           </div>
         </div>
