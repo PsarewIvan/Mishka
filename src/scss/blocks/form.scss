@@ -62,7 +62,7 @@
 .form__li {
   min-height: 2.6em;
 
-  &:not(:last-of-type) {
+  &:not(:last-child) {
     margin-bottom: 15px;
   }
 }
@@ -170,6 +170,7 @@
 }
 
 .form__input--area {
+  min-height: 244px;
   padding: 15px;
 
   border: 2px solid $form-border;
@@ -210,14 +211,37 @@
   .form__fieldset {
     position: relative;
 
-    &:not(:last-of-type) {
+    &:not(:last-child) {
       margin-bottom: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 55px;
     }
   }
 
-  .form__fieldset--color {
-    padding: 50px 0;
+  // Такая конструкция для переназначения специфичности
+  .form {
+    & .form__fieldset--tel {
+      margin-bottom: 0;
+    }
+  }
 
+   .form__fieldset--color {
+     padding: 50px 0;
+   }
+
+  .form__fieldset--tel {
+    padding: 50px 0 25px;
+  }
+
+  .form__fieldset--email {
+    padding: 0 0 50px;
+  }
+
+  .form__fieldset--color,
+  .form__fieldset--tel,
+  .form__fieldset--email {
     &::after {
       content: '';
       z-index: -1;
@@ -262,6 +286,12 @@
     &:not(:last-of-type) {
       margin: 0;
     }
+
+    &--name {
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+    }
   }
 
   .form__label {
@@ -277,8 +307,33 @@
     }
   }
 
+  .form__input--text {
+    font-size: 19px;
+  }
+
   .form__input--radio:checked + .form__label::before {
     background: radial-gradient($form-checked 10px, transparent 11px);
+  }
+
+  .form__input--area {
+    min-height: 140px;
+  }
+
+  .form__footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .form__button-wrapper {
+    order: -1;
+  }
+
+  .form__explanation {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.76;
   }
 }
 
