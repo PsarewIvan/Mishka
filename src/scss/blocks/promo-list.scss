@@ -109,14 +109,22 @@
     &::after {
       content: '';
       position: absolute;
+      bottom: 0;
 
       display: block;
       width: 100%;
-      // вставить волнистый фон
+      height: 24px;
+
+      background-image: url(../img/icon/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: auto 95%;
     }
   }
 
   .promo-list__list {
+    position: relative;
+
     width: $tablet-width;
     flex-direction: row;
     margin: 0 auto;
@@ -126,6 +134,10 @@
     width: 100%;
   }
 
+  .promo-list__link {
+    min-height: 130px;
+  }
+
   .promo-list__span-wrapper {
     width: 100%;
     margin: 0 35px;
@@ -133,12 +145,21 @@
 }
 
 @media (min-width: $desktop-media) {
+  .promo-list {
+    &::after {
+      height: 37px;
+      background-size: auto 100%;
+    }
+  }
+
   .promo-list__list {
     width: $desktop-width;
     margin: 0 auto;
   }
 
   .promo-list__link {
+    min-height: 140px;
+
     font-size: 20px;
     line-height: 1.5;
   }
