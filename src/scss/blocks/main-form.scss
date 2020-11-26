@@ -55,3 +55,20 @@
     width: $tablet-width;
   }
 }
+
+@media (min-width: $desktop-media) {
+  .main-form__headline {
+    width: $desktop-width;
+    padding-bottom: 115px;
+  }
+
+  .main-form__description {
+    width: $desktop-width;
+    padding: 0 $desktop-fragment;
+    margin-top: 105px;
+  }
+
+  .main-form__form {
+    width: $desktop-width;
+  }
+}
