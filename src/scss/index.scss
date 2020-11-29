@@ -3,7 +3,6 @@
 @import "global/var.scss";
 @import "global/fonts.scss";
 @import "global/scaffolding.scss";
-@import "global/display-none.scss";
 
 // Blocks
 @import "blocks/main.scss";
@@ -28,3 +27,5 @@
 @import "blocks/desktop-nav.scss";
 @import "blocks/modal-order.scss";
 @import "blocks/order-form.scss";
+
+@import "global/display-none.scss";
