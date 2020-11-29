@@ -32,3 +32,30 @@
   width: $mobile-width;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-media) {
+  .modal-order {
+    left: 50%;
+
+    width: $modal-width-tablet;
+    padding: 45px 0;
+
+    border: 1px solid $modal-border-color;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-order__heading-br {
+    display: none;
+  }
+
+  .modal-order__form,
+  .modal-order__heading {
+    width: $modal-form-width-tablet;
+  }
+
+  .modal-order__heading {
+    font-size: 30px;
+    line-height: 1.9;
+  }
+}
