@@ -1,7 +1,17 @@
 @media(hover: hover) and (pointer: fine) {
-  .button:hover {
-    background-color: $btn-background;
-    color: $light-color;
+  .button {
+    &:hover {
+      background-color: $btn-background;
+      color: $light-color;
+    }
+
+    &--modal-order:hover {
+      background-color: $form-order-submit-color;
+
+      color: $light-color;
+
+      opacity: 0.7;
+    }
   }
 }
 
@@ -20,9 +30,9 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  transition:
-    background-color 0.2s,
-    color 0.2s;
+  cursor: pointer;
+
+  transition: all 0.2s;
 
   &:focus {
     background-color: $btn-background;
@@ -32,6 +42,27 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--modal-order {
+    padding: 15px 0;
+
+    color: $light-color;
+
+    border: none;
+    background-color: $form-order-submit-color;
+
+    &:focus {
+      background-color: $form-order-submit-color;
+
+      color: $light-color;
+
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
   }
 }
 
