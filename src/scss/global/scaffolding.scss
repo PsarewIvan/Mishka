@@ -31,6 +31,7 @@ fieldset {
 
 .modal-overlay {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
 
@@ -38,6 +39,8 @@ fieldset {
   height: 100vh;
 
   background-color: rgba($color: #ffffff, $alpha: 0.9);
+
+  cursor: pointer;
 }
 
 * {
