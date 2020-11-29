@@ -46,3 +46,13 @@
 .order-form__input:checked + .order-form__label {
   border-color: $form-order-border-active;
 }
+
+@media (min-width: $tablet-media) {
+  .order-form__sizes-choose {
+    font-size: 17px;
+  }
+
+  .order-form__label {
+    width: 112px;
+  }
+}
