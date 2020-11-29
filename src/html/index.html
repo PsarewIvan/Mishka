@@ -307,6 +307,40 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal-order">
+    <p class="modal-order__heading">Добавить в корзину</p>
+    <form class="modal-order__form order-form" action="https://echo.htmlacademy.ru" method="POST">
+      <legend class="order-form__sizes-choose">Выберите размер:</legend>
+      <ul class="order-form__sizes-list">
+        <li class="order-form__sizes-li">
+          <input class="visually-hidden order-form__input"
+            type="radio"
+            id="sizeS"
+            name="sizes"
+            value="sizeS"
+            checked>
+          <label class="order-form__label" for="sizeS"><span>S</span></label>
+        </li>
+        <li class="order-form__sizes-li">
+          <input class="visually-hidden order-form__input"
+            type="radio"
+            id="sizeM"
+            name="sizes"
+            value="sizeM">
+          <label class="order-form__label" for="sizeM"><span>M</span></label>
+        </li>
+        <li class="order-form__sizes-li">
+          <input class="visually-hidden order-form__input"
+            type="radio"
+            id="sizeL"
+            name="sizes"
+            value="sizeL">
+          <label class="order-form__label" for="sizeL"><span>L</span></label>
+        </li>
+      </ul>
+      <button class="order-form__submit button" type="submit">Добавить</button>
+    </form>
+  </div>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=08772692-8900-4a64-ad6c-bb62aaac0a09&lang=ru_RU"></script>
   <script src="js/script-min.js"></script>
 </body>
