@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  if (document.querySelector('#ymap')) {
+  if (document.querySelector('#ymap') && document.ymaps) {
     let init = function () {
       let myMap = new ymaps.Map('ymap', {
         center: [59.938631, 30.3230554],
