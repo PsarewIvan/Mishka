@@ -41,7 +41,12 @@ $border-color: #ececec;
 $body-background: #ffffff;
 $form-opacity: rgba(68, 68, 68, 0.3);
 $icon-form-fill: #cccccc;
-$modal-border-color: #c6c6c6;
+$modal-border-color: rgba(68, 68, 68, 0.3);
+$form-order-border: rgba(68, 68, 68, 0.1);
+$form-order-border-hover: rgba(68, 68, 68, 0.3);
+$form-order-border-active: #62d1ba;
+$form-order-submit-color: #63d1bb;
+
 
 //Retina
 $retina-dpi: 144dpi;
