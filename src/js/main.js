@@ -18,3 +18,8 @@
  * API Яндекс.карты
  */
 //= scripts/ymap.js
+
+/*
+ * Модальное окно
+ */
+//= scripts/modal.js
