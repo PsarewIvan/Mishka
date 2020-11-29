@@ -1,5 +1,6 @@
 'use strict';
-{
+
+(function () {
   const comments = document.querySelectorAll('.reviews__li');
 
   function toggleHide(item) {
@@ -7,10 +8,10 @@
   }
 
   function hideSpareComment(array) {
-    for(let i = 1; i < array.length; i++) {
+    for (let i = 1; i < array.length; i++) {
       toggleHide(array[i]);
     }
   }
 
   hideSpareComment(comments);
-}
+})()

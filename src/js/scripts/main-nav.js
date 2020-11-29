@@ -1,5 +1,6 @@
 'use strict';
-{
+
+(function () {
   const mainNav = document.querySelector('.js--main-nav');
   const mainNavButton = document.querySelector('.js--main-header__nav-btn');
 
@@ -25,4 +26,4 @@
       mainNavButton.classList.add('display-none');
     }
   }
-}
+})()
